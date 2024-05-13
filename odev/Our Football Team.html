@@ -34,6 +34,43 @@
   </section>
 </main>
 
+<!-- APIs Content-->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Football API Example</title>
+</head>
+<body>
+<h1>Football API Example</h1>
+<table id="standingsTable">
+  <thead>
+  <tr>
+    <th>Team</th>
+    <th>Points</th>
+  </tr>
+  </thead>
+  <tbody></tbody>
+</table>
+<script>
+  var data = null;
+
+  var xhr = new XMLHttpRequest();
+  xhr.withCredentials = true;
+
+  xhr.addEventListener("readystatechange", function () {
+    if (this.readyState === this.DONE) {
+      console.log(this.responseText);
+    }
+  });
+
+  xhr.open("GET", "https://api.collectapi.com/sport/leaguesList");
+  xhr.setRequestHeader("content-type", "application/json");
+  xhr.setRequestHeader("authorization", "apikey your_token");
+
+  xhr.send(data);
+</script>
+</body>
+</html>
 <!-- Footer -->
 <footer class="footer mt-5">
   <div class="container">
