@@ -7,10 +7,11 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl7/1L_dstPt3HV5HzF6Gvk/e3s4Wz6iJgD/+ub2oU" crossorigin="anonymous">
     <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="custom.css">
 </head>
 <body>
 <!-- Navigation Bar -->
-<!-- HTML elemanları kullanılarak Header page- oluşturuldu -->
+<!-- HTML elemanları kullanılarak Header page oluşturuldu -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container">
         <a class="navbar-brand" href="#">Who Am I?</a>
@@ -87,7 +88,7 @@
                 <ul>
                     <li>
                         <h2>Eğitim</h2>
-                        <p>İlkokul ve Ortaokul Eğitimi: <a href="https://sivas.meb.k12.tr/">Sivasta MEB'e bağlı bir devlet okulu</a></p>
+                        <p>İlkokul ve Ortaokul Eğitimi: <a href="https://gurunataturkortaokulu.meb.k12.tr">Sivas Gürün Atatürk Ortaokulu</a></p>
                         <p>Lise Eğitimi: <a href="https://sehitlerfenlisesi.meb.k12.tr/">Yatılı Yozgat Şehitler Fen Lisesi</a></p>
                         <p>Lisans Eğitimi: <a href="https://www.sakarya.edu.tr/">Sakarya Üniversitesi Bilgisayar Mühendisliği Bölümü</a>(Devam Ediyor)</p>
 
@@ -129,14 +130,14 @@
     </div>
 </section>
 
-<!-- Team Section -->
+<!-- Culture Section -->
 <section id="team" class="py-5">
     <div class="container">
         <div class="row">
             <div class="col-lg-3 col-md-6 mb-4">
                 <div class="card h-100">
                     <a href="https://tr.wikipedia.org/wiki/Divriği_Ulu_Camii_ve_Darüşşifası">
-                        <img src="image4.jpg" alt="Team Member" class="card-img-top hover-scale">
+                        <img src="image4.jpg" alt="Culture Member" class="card-img-top hover-scale">
                     </a>
                     <div class="card-body">
                         <h2 class="card-title">Divriği Ulu Camii ve Darüşşifası</h2>
@@ -147,7 +148,7 @@
             <div class="col-lg-3 col-md-6 mb-4">
                 <div class="card h-100">
                     <a href="https://tr.wikipedia.org/wiki/Sivas">
-                        <img src="image5.jpg" alt="Team Member" class="card-img-top hover-scale">
+                        <img src="image5.jpg" alt="Culture Member" class="card-img-top hover-scale">
                     </a>
                     <div class="card-body">
                         <h2 class="card-title">Sivas Kalesi</h2>
@@ -158,7 +159,7 @@
             <div class="col-lg-3 col-md-6 mb-4">
                 <div class="card h-100">
                     <a href="https://tr.wikipedia.org/wiki/Gök_Medrese_(Sivas)">
-                        <img src="image6.jpg" alt="Team Member" class="card-img-top hover-scale">
+                        <img src="image6.jpg" alt="Culture Member" class="card-img-top hover-scale">
                     </a>
                     <div class="card-body">
                         <h2 class="card-title">Gök Medrese</h2>
@@ -169,7 +170,7 @@
             <div class="col-lg-3 col-md-6 mb-4">
                 <div class="card h-100">
                     <a href="https://tr.wikipedia.org/wiki/Kangal_köpeği" target="_blank">
-                    <img src="image7.jpg" alt="Team Member" class="card-img-top hover-scale">
+                    <img src="image7.jpg" alt="Culture Member" class="card-img-top hover-scale">
                     </a>
                         <div class="card-body">
                         <h2 class="card-title">Sivas Kangal Köpeği</h2>
@@ -202,7 +203,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Sivas Spor</h5>
                         <p class="card-text">Sivas Spor hakkında daha fazla bilgi edinmek için lütfen aşşağıdaki futbol takımımız adlı linke tıklayınız.</p>
-                        <a href="site2.html" class="btn btn-primary">Futbol Takımımız</a>
+                        <a href="http://localhost:63342/gitmuharrem/WebTabanli/odev/Our%20Football%20Team.html?_ijt=e0ollinrl6vv52kqgu5mebd8cb" class="btn btn-primary">Futbol Takımımız</a>
                     </div>
                 </div>
             </div>
@@ -211,25 +212,52 @@
 </section>
 <!-- Login Section -->
 <section id="login" class="py-5 bg-light">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6">
-                <h1>Giriş Yap</h1>
-                <form id="login-form">
-                    <div class="mb-3">
-                        <label for="email" class="form-label">Mail Adresi</label>
-                        <input type="email" class="form-control" id="email">
-                    </div>
-                    <div class="mb-3">
-                        <label for="password" class="form-label">Şifre</label>
-                        <input type="password" class="form-control" id="password">
-                    </div>
-                    <button type="submit" class="btn btn-primary">Onayla</button>
-                </form>
+    <!-- Registration Form -->
+    <section id="register" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h1>Kayıt Ol</h1>
+                    <form id="registration-form">
+                        <div class="mb-3">
+                            <label for="username" class="form-label">Kullanıcı Adı</label>
+                            <input type="text" class="form-control" id="username">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Mail Adresi</label>
+                            <input type="email" class="form-control" id="email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Şifre</label>
+                            <input type="password" class="form-control" id="password">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Onayla</button>
+                    </form>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
+    <!-- Login Form -->
+    <section id="login" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h1>Giriş Yap</h1>
+                    <form id="login-form">
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Mail Adresi</label>
+                            <input type="email" class="form-control" id="email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Şifre</label>
+                            <input type="password" class="form-control" id="password">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Onayla</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
 
 <!-- Contact Section -->
 <section id="contact" class="py-5">
